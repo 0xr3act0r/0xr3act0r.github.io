@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="[TR]">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		ADEO The Chupacabra Vakasının Adli Bilişim Teknikleriyle İncelenmesi ::
+	
+	 r3act0r's madhouse :: personal & cyber security & reverse engineering blog
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="adeo the chupacabra vakasının adli bilişim teknikleriyle incelenmesi">
+<meta name="keywords" content="cyber security, reverse engineering, hack, crack, r3act0r, tutorial, blog, malware, research, adeo, forensic, adli bilişim, the chupacabra, vaka analizi, ctf, writeup, rapor, incident response, volatility, e01, inceleme">
+<meta name="author" content="r3act0r's madhouse">
+
+<!-- Feed links -->
+<link rel="alternate" type="application/rss+xml" title="r3act0r's madhouse's RSS Feed" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="r3act0r's madhouse's Atom Feed" href="/atom.xml">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="r3act0r's madhouse" />
+<meta property="og:title" content=" r3act0r's madhouse :: personal & cyber security & reverse engineering blog" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="security research & reverse engineering & malware analysis" />
+<meta property="og:url" content="http://localhost:4000" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="[TR]" />
+<meta property="og:locale:alternate" content="[EN]" />
+<meta property="fb:page_id" content="" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content=" r3act0r's madhouse :: personal & cyber security & reverse engineering blog" />
+<meta name="twitter:description" content="security research & reverse engineering & malware analysis" />
+<meta name="twitter:url" content="http://localhost:4000" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="akilgundogan" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content=" r3act0r's madhouse :: personal & cyber security & reverse engineering blog" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="security research & reverse engineering & malware analysis" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+
+
+	<body>
+		<header>
+	<pre class="ascii logo"> </pre>
+	<pre class="ascii name">
+██████╗ ██████╗  █████╗  ██████╗████████╗ ██████╗ ██████╗ 
+██╔══██╗╚════██╗██╔══██╗██╔════╝╚══██╔══╝██╔═████╗██╔══██╗
+██████╔╝ █████╔╝███████║██║        ██║   ██║██╔██║██████╔╝
+██╔══██╗ ╚═══██╗██╔══██║██║        ██║   ████╔╝██║██╔══██╗
+██║  ██║██████╔╝██║  ██║╚██████╗   ██║   ╚██████╔╝██║  ██║
+╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</pre>
+</header>
+
+		<nav>
+	<ul>
+		<li><a href="/#">anasayfa</a></li>
+		<li><a href="/#about">hakkında</a></li>
+		<li><a href="/#posts">yazılar</a></li>
+		<li><a href="/#talks">konuşmalar</a></li>
+		<li><a href="/#projects">projeler</a></li>
+		<li><a href="/#tools">araçlar</a></li>
+		<li><a href="/#contact">iletişim</a></li>
+		<li><a href="/rss.xml">rss</a>/<a href="/atom.xml">atom</a></li>
+	</ul>
+</nav>
+
+		<main>
+			<header>
+	<h1>ADEO The Chupacabra Vakasının Adli Bilişim Teknikleriyle İncelenmesi</h1>
+	by 
+	
+	<author><a href="/#M. Akil Gündoğan">M. Akil Gündoğan</a></author>
+	
+</header>
+
+<p><img src="https://pwnlab.me/wp-content/uploads/2022/05/Chupacabra-300x300.png" alt="" /></p>
+
+<p><a href="https://adeo.com.tr/en/homepage/">ADEO</a>’nun DFIR ekibi tarafından hazırlanan <a href="https://github.com/ADEOSec/Digital-Forensic-Training">Chupacabra</a> örnek adli bilişim vakası CTF’ini elimizden geldiğince özen göstererek tamamladık. Süreç bizler için unuttuğumuz birçok bilgiyi tazeleyici olduğu kadar, öğretici ve oldukça eğlenceli bir şekilde geçti. Emeği geçen herkese “PwnLab.Me Siber Güvenlik Topluluğu” olarak teşekkürlerimizi iletiyoruz.</p>
+
+<p><a href="https://www.linkedin.com/in/akilgundogan/">Muhammed Akil GÜNDOĞAN</a> – <a href="https://twitter.com/akilgundogan">@akilgundogan</a> <br />
+<a href="https://www.linkedin.com/in/farukulutas/">Faruk ULUTAŞ</a> – <a href="https://farukulutas.github.io/">farukulutas.github.io</a><br />
+<a href="https://www.linkedin.com/in/yusufcancakir212/">Yusuf Can Çakır</a> – <a href="https://twitter.com/Yusufcancakiir">@Yusufcancakiir</a> <br />
+<a href="https://www.linkedin.com/in/furkannozturk/">Furkan ÖZTÜRK</a> – <a href="https://twitter.com/furk4n0zturk">@furk4n0zturk</a><br />
+<a href="https://www.linkedin.com/in/bulutmehmet/">Mehmet BULUT</a> – <a href="https://twitter.com/oldnco">@oldnco</a></p>
+
+<p>“Kadıköy’e, Montana çetesine, şehrin kötü çocuklarına ve bütün ruhsuzlara…”</p>
+
+<p>Adios, ADEO’s 🙂</p>
+
+<p>Detaylı vaka analizi raporumuza aşağıdan ulaşabilirsiniz.</p>
+
+<p><a href="https://pwnlab.me/wp-content/uploads/2022/05/Chupacabra-Vakasinin-Adli-Bilisim-Teknikleriyle-Incelenmesi.pdf">https://pwnlab.me/wp-content/uploads/2022/05/Chupacabra-Vakasinin-Adli-Bilisim-Teknikleriyle-Incelenmesi.pdf</a></p>
+
+
+		</main>
+		<footer>
+
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = '';
+    var disqus_config = function () {
+        this.page.identifier = "/posts/adeo-the-chupacabra-vakasinin-forensic-teknikleriyle-incelenmesi/";
+    };
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</footer>
+
+	</body>
+</html>

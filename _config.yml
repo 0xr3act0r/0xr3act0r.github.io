@@ -1,0 +1,24 @@
+# Site specific settings
+title: " r3act0r's madhouse :: personal & cyber security & reverse engineering blog"
+name: "r3act0r's madhouse"
+keywords: "cyber security, reverse engineering, hack, crack, r3act0r, tutorial, blog, malware, research"
+baseurl: ""
+url: "http://r3act0r.dev"
+description: "security research & reverse engineering & malware analysis"
+cover: "/assets/img/cover.svg"
+fanpage_id: ""
+
+# Site general settings
+lang: "[TR]"
+lang_alternate: "[EN]"
+ssl: false # It will redirect to https
+
+disqus: 
+twitter: akilgundogan
+facebook: 
+github: 0xr3act0r
+google:
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>r3act0r's madhouse - Articles</title>
+    <description>security research &amp; reverse engineering &amp; malware analysis</description>
+    <link>
+    http://localhost:4000</link>
+    
+      <item>
+        <title>PwnLab.Me Security Resources</title>
+        
+          <description>siber güvenlik konularında faydalı dökümanların paylaşıldığı bir repo</description>
+        
+        <pubDate>Sun, 26 Jun 2022 00:00:00 +0300</pubDate>
+        <link>https://github.com/0xr3act0r/Pwnlab-Security-Resources</link>
+        <guid isPermaLink="true">http://localhost:4000/projects/pwnlab-security-resources/</guid>
+      </item>
+    
+      <item>
+        <title>ADEO The Chupacabra Vakasının Adli Bilişim Teknikleriyle İncelenmesi</title>
+        
+          <description>adeo the chupacabra vakasının adli bilişim teknikleriyle incelenmesi</description>
+        
+        <pubDate>Mon, 16 May 2022 19:00:00 +0300</pubDate>
+        <link>/posts/adeo-the-chupacabra-vakasinin-forensic-teknikleriyle-incelenmesi/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/adeo-the-chupacabra-vakasinin-forensic-teknikleriyle-incelenmesi/</guid>
+      </item>
+    
+      <item>
+        <title>bu araç özeldir</title>
+        
+          <description></description>
+        
+        <pubDate>Wed, 02 Mar 2022 16:00:00 +0300</pubDate>
+        <link>/ozel-arac/</link>
+        <guid isPermaLink="true">http://localhost:4000/ozel-arac/</guid>
+      </item>
+    
+      <item>
+        <title>Tersine Mühendisliğe Giriş #1 - Temel Kavramlar</title>
+        
+          <description>reverse engineering hakkında bilinmesi gereken en temel kavramlar</description>
+        
+        <pubDate>Wed, 02 Mar 2022 16:00:00 +0300</pubDate>
+        <link>/posts/tersine-muhendislige-giris/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/tersine-muhendislige-giris/</guid>
+      </item>
+    
+      <item>
+        <title>bu araç özeldir</title>
+        
+          <description></description>
+        
+        <pubDate>Wed, 02 Mar 2022 16:00:00 +0300</pubDate>
+        <link>/ozel-arac/</link>
+        <guid isPermaLink="true">http://localhost:4000/ozel-arac/</guid>
+      </item>
+    
+      <item>
+        <title>aradığınız ingilizce yazı hiç yazılmadı</title>
+        
+          <description>ingilizcesi yok ama tıkla istersen sen bilirsin.</description>
+        
+        <pubDate>Wed, 02 Mar 2022 16:00:00 +0300</pubDate>
+        <link>/posts/ingilizce-arayanlara-ozel/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/ingilizce-arayanlara-ozel/</guid>
+      </item>
+    
+      <item>
+        <title>Hafiye LNK/BAT Builder</title>
+        
+          <description>zararlı kısayol ve bat dosyası oluşturma aracı</description>
+        
+        <pubDate>Thu, 26 Nov 2015 00:00:00 +0200</pubDate>
+        <link>/ozel-arac</link>
+        <guid isPermaLink="true">http://localhost:4000/tools/tool-two/</guid>
+      </item>
+    
+      <item>
+        <title>Hafiye Remote Administration Tool</title>
+        
+          <description>telegram kontrollü basit bir RAT</description>
+        
+        <pubDate>Thu, 26 Nov 2015 00:00:00 +0200</pubDate>
+        <link>/ozel-arac</link>
+        <guid isPermaLink="true">http://localhost:4000/tools/tool-one/</guid>
+      </item>
+    
+  </channel>
+</rss>
