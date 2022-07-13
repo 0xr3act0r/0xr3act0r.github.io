@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'UPX Manual Unpacking Rehberi - Packer Nedir, Nasıl Çalışır?'
-date: 2022-03-02 13:00:00
+date: 2021-06-07 13:00:00
 categories: posts
 comments: true
 en: true
