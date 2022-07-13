@@ -16,4 +16,5 @@ authors:
 Popüler Java frameworklerinden Spring üzerinde çıkan Spring4Shell adlı remote code execution zafiyetinin tespitine ve adım adım sömürü (exploitation) aşamalarına değindim.
 
 Technopat.Net ana sayfasında yayınlamış olduğum yazıma aşağıdan ulaşabilirsiniz.
+
 [https://www.technopat.net/2022/04/13/spring4shell-nedir-zafiyet-tespiti-ve-somuru-asamalari/](https://www.technopat.net/2022/04/13/spring4shell-nedir-zafiyet-tespiti-ve-somuru-asamalari/)
