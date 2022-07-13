@@ -17,4 +17,4 @@ UPX ile paketlenmiş bir yazılım manuel yöntemlerle nasıl unpack edilir en b
 
 Technopat.Net forumları üzerindeki üyeliğimden yayınlamış olduğum yazıma aşağıdan ulaşabilirsiniz.
 
-https://www.technopat.net/sosyal/konu/upx-manuel-unpacking-packer-nedir-nasil-calisir.1537266/](https://www.technopat.net/sosyal/konu/upx-manuel-unpacking-packer-nedir-nasil-calisir.1537266/)
+[https://www.technopat.net/sosyal/konu/upx-manuel-unpacking-packer-nedir-nasil-calisir.1537266/](https://www.technopat.net/sosyal/konu/upx-manuel-unpacking-packer-nedir-nasil-calisir.1537266/)
